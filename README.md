@@ -14,7 +14,7 @@ Stress test: `stress-ng --random 1000`
 
 To get this project up and running, you will need to signup for a resin.io account [here][signup-page] and set up a device, have a look at our [Getting Started tutorial][gettingStarted-link]. Once you are set up with resin.io, you will need to clone this repo locally:
 ```
-$ git clone git@github.com:resin-projects/resin-watchdog.git
+$ git clone git@github.com:resin-io-projects/resin-watchdog.git
 ```
 Then add your resin.io application's remote:
 ```
