@@ -1,11 +1,11 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-systemd
+FROM resin/%%RESIN_MACHINE_NAME%%-debian
 
 MAINTAINER Craig Mulligan <craig@resin.io>
 
 # switch on systemd init system in container
+ENV INITSYSTEM on
 
-
-RUN apt-get update && apt-get install -y stress-ng dropbear
+RUN apt-get update && apt-get install -y stress-ng
 
 # Copy our watchdog configuration, so it can be automatically loaded
 RUN echo "RuntimeWatchdogSec=16" >> /etc/systemd/system.conf
