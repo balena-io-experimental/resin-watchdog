@@ -1,6 +1,6 @@
 ## Watchdog demo
 
-This is a simple watchdog example project.
+This is a simple watchdog example project made for resin.io devices with the `bcm2708` chipsets like the Raspberrry Pi. 
 
 This project loads the watchdog kernel module `modprobe bcm2708_wdog`. And runs systemd's built-in watchdog daemon, if the system hangs, systemd's software watchdog will fail to notify the hardware that it is alive and the system will restart.
 
