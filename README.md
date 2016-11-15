@@ -1,3 +1,8 @@
+## Warning
+
+**NOT RECOMMENDED FOR PRODUCTION**
+This demo feeds the watchdog from the application container, if an update (killing the old container and starting the new one) takes longer than the watchdog interval your device will go into and infinite bootloop and you are going to have a bad time. 
+
 ## Watchdog demo
 
 This is a simple watchdog example project made for resin.io devices with the `bcm2708` chipsets like the Raspberrry Pi. 
